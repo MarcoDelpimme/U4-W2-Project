@@ -31,9 +31,6 @@ $titolo = $stmt->fetch();
 
 
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,7 +52,7 @@ $titolo = $stmt->fetch();
     </form>
   </div>
 </nav>
-    <form class="text-center" action="edit_modify.php?id=<?=$id?>" method="post">
+    <form class="text-center" action="edit_modify.php?id=<?=$id?>" method="post" novalidate>
         <h1>ADD BOOK</h1>
         <div class="mb-3">
             <label for="exampleInputName1" class="form-label">Titolo</label>

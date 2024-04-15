@@ -10,16 +10,8 @@
 
 
 <div class="container mt-5">
-<nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand">Navbar</a>
-    <form class="d-flex" role="search" action="process_search.php" method="get">
-    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search_query">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-    <form class="text-center" action="process_form.php" method="post">
+
+    <form class="text-center" action="process_form.php" method="post" novalidate>
         <h1>ADD BOOK</h1>
         <div class="mb-3">
             <label for="exampleInputName1" class="form-label">Titolo</label>

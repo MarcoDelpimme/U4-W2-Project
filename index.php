@@ -47,6 +47,15 @@ $stmt->execute();
 </head>
 <body>
 <div class="container ">
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand">Navbar</a>
+    <form class="d-flex" role="search" action="process_search.php" method="get">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search_query">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
     <h1>BOOK LIST </h1>
     <table class="table">
       <thead>
@@ -72,7 +81,7 @@ $stmt->execute();
             echo "<td>{$row['genere']}</td>"; 
             echo "<td id='btn-td'>
             <a href='http://localhost/U4-W2-Project/delete.php?id={$row['id']}'><button class='btn btn-danger'>delete</button></a>
-            <a href='http://localhost/U4-W2-Project/details.php?id={$row['id']}'><button class='btn btn-info'>details</button></a>
+            <a href='http://localhost/U4-W2-Project/detail.php?id={$row['id']}'><button class='btn btn-info'>details</button></a>
             <a href='http://localhost/U4-W2-Project/modify.php?id={$row['id']}'><button class='btn btn-warning'>modify</button></a>
             </td>";
            

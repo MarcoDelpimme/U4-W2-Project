@@ -15,6 +15,9 @@
 
 $pdo= new PDO ($dsn,$user,$pass,$options );
 
+
+
+
  
 $titolo=$_POST['titolo'];
 $autore=$_POST['autore'];
