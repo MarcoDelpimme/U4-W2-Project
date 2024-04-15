@@ -47,9 +47,9 @@ foreach ($stmt as $row) {
     echo "<td>{$row['anno_pubblicazione']}</td>"; 
     echo "<td>{$row['genere']}</td>"; 
     echo "<td id='btn-td'>";
-    echo "<a href='http://localhost/U4-W1-D3-BE/delete.php?id={$row['id']}' class='btn btn-danger'>delete</a> ";
-    echo "<a href='http://localhost/U4-W1-D3-BE/details.php?id={$row['id']}' class='btn btn-info'>details</a> ";
-    echo "<a href='http://localhost/U4-W1-D3-BE/modify.php' class='btn btn-warning'>modify</a>";
+    echo "<a href='http://localhost/U4-W2-Project/delete.php?id={$row['id']}' class='btn btn-danger'>delete</a> ";
+    echo "<a href='http://localhost/U4-W2-Project/details.php?id={$row['id']}' class='btn btn-info'>details</a> ";
+    echo "<a href='http://localhost/U4-W2-Project/modify.php' class='btn btn-warning'>modify</a>";
     echo "</td>";
     echo "</tr>";
     $i++;

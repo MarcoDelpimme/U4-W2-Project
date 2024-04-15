@@ -43,17 +43,9 @@ $titolo = $stmt->fetch();
 
 
 <div class="container mt-5">
-<nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand">Navbar</a>
-    <form class="d-flex" role="search" action="process_search.php" method="get">
-    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search_query">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+
     <form class="text-center" action="edit_modify.php?id=<?=$id?>" method="post" novalidate>
-        <h1>ADD BOOK</h1>
+        <h1>EDIT BOOK</h1>
         <div class="mb-3">
             <label for="exampleInputName1" class="form-label">Titolo</label>
             <input type="text" class="form-control" id="exampleInputName1" name="titolo" aria-describedby="nameHelp">
@@ -70,7 +62,7 @@ $titolo = $stmt->fetch();
             <label for="exampleInputAge1" class="form-label">Genere</label>
             <input type="text" class="form-control" id="exampleInputAge1" name="genere">
         </div>
-        <button type="submit" class="btn btn-primary">Add</button>
+        <button type="submit" class="btn btn-primary">EDIT</button>
     </form>
     <div class="mt-3">
         <a href="http://localhost/U4-W2-Project/index.php" class="btn btn-info">Show book LIST</a>
